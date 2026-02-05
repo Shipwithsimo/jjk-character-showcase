@@ -126,6 +126,10 @@ To run the project in your local environment, follow these steps:
 3. Run `npm run dev` or `yarn dev` to get the project started
 4. Open http://localhost:5173 (or the address shown in your console) in your web browser to view the app
 
+## 🎥 Preview
+
+https://github.com/user-attachments/assets/b37d9864-5c9a-4745-8191-a2e1927520af
+
 ## 📝 License
 
 Copyright (c) 2026 shipwithsimo
