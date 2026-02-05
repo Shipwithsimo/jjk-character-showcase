@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap');
+@import './styles/glitch.css';
+@import './styles/textEffects.css';
+
+:root {
+  font-family: 'Roboto', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Jujutsu Kaisen Color Palette */
+  --jjk-purple: #8b5cf6;
+  --jjk-dark-purple: #6d28d9;
+  --jjk-red: #ef4444;
+  --jjk-dark-red: #991b1b;
+  --jjk-blue: #3b82f6;
+  --jjk-cyan: #06b6d4;
+  --jjk-black: #0f0f0f;
+  --jjk-dark-bg: #1a1a2e;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: var(--jjk-black);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--jjk-purple);
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--jjk-cyan);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--jjk-black);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Effetto energia maledetta di sfondo - ora gestito da CharacterBackground */
+
+/* Particelle fluttuanti */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--jjk-dark-purple);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: var(--jjk-purple);
+  background-color: var(--jjk-purple);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--jjk-purple);
+  outline-offset: 2px;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Pulse animation for character silhouettes */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
