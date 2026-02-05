@@ -128,7 +128,9 @@ To run the project in your local environment, follow these steps:
 
 ## 🎥 Preview
 
-https://github.com/user-attachments/assets/b37d9864-5c9a-4745-8191-a2e1927520af
+
+https://github.com/user-attachments/assets/43fdd8e6-ca9b-4a48-8a20-1ca64a1ebbdf
+
 
 ## 📝 License
 
